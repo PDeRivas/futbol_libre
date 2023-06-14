@@ -14,6 +14,6 @@ const listaResultados = document.getElementById('lista-peliculas');
           listaResultados.appendChild(li)
         });
       })
-      .catch(error => {
-        console.error('Error', error);
+      .catch(err => {
+        console.error('Error', err);
       });

@@ -1,0 +1,16 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url('../img/fondo.png');
+    background-attachment: fixed;
+}
+#img-perfil{
+    border-radius: 100%;
+}
+#contacto{
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  

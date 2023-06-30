@@ -4,8 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rincon Viajero | Galeria</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top opacity-75 " data-bs-theme="dark">     
+    <div class="container-fluid">       
+      <a class="navbar-brand mx-5" href="#">         
+        <img src="../img/LOGO-RINCON.png" alt="Bootstrap" width="auto" height="60">       
+      </a>       
+      <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">         
+        <span class="navbar-toggler-icon"></span>       
+      </button>       
+      <div class="collapse navbar-collapse justify-content-end mx-5" id="navbarSupportedContent">              
+        <ul class="navbar-nav mb-2 mb-lg-0 ">           
+          <li class="nav-item">             
+            <a href="index.html" class="navbar-brand">Inicio</a>           
+          </li>           
+          <li class="nav-item">             
+            <a href="./pages/FAQ.html" class="navbar-brand">FAQ</a>           
+          </li>           
+          <li class="nav-item">             
+            <a href="./pages/galeria.html" class="navbar-brand">Galeria</a>
+          </li>
+          <li class="nav-item">             
+            <a href="#contacto" class="navbar-brand">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="d-flex" style="height: 250px;">
+      <div class="vr"></div>
+    </div>
+    
+    <section class="container " style="background-color: rgba(255, 255, 255, 0.9);">
+      <div class="container pb-5 mb-5">
+        <div class="text-center p-5">
+          <h2> Galeria</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/brasil.jpg">
+              <div class="card-body">
+                <h3>Río de Janeiro, Brasil</h3>
+                <p class="card-text">Playas, montañas, carnaval y la estatua del Cristo Redentor: la Ciudad Maravillosa te cautivará.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/paris.jpg">
+              <div class="card-body">
+                <h3>Paris, Francia</h3>
+                <p class="card-text">Paris, la Ciudad de la Luz, cautiva con su encanto romántico, la Torre Eiffel y sus exquisitas delicias culinarias.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/nueva_york.jpg">
+              <div class="card-body">
+                <h3>Nueva York, EEUU</h3>
+                <p class="card-text">La ciudad que nunca duerme, famosa por sus rascacielos, Times Square y la Estatua de la Libertad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/roma.jpg">
+              <div class="card-body">
+                <h3>Roma, Italia</h3>
+                <p class="card-text">La Ciudad Eterna, llena de historia y belleza arquitectónica con el Coliseo, el Vaticano y la Fontana di Trevi.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/tokio.jpg">
+              <div class="card-body">
+                <h3>Tokio, Japon</h3>
+                <p class="card-text">Tokio, la fusión perfecta de tradición y vanguardia, cautiva con su bullicio urbano, templos antiguos y deliciosa gastronomía.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/sidney.jpg">
+              <div class="card-body">
+                <h3>Sidney, Australia</h3>
+                <p class="card-text">La espectacular ciudad de Australia, famosa por su icónica Ópera de Sídney, el Puente del Puerto y sus hermosas playas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
 </body>
 </html>

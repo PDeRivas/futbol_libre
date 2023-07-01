@@ -2,64 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rincon Viajero</title>
+  <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top opacity-75 " data-bs-theme="dark">     
-    <div class="container-fluid">       
-      <a class="navbar-brand mx-5" href="#">         
-        <img src="img/LOGO-RINCON.png" alt="Bootstrap" width="auto" height="60">       
-      </a>       
-      <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">         
-        <span class="navbar-toggler-icon"></span>       
-      </button>       
-      <div class="collapse navbar-collapse justify-content-end mx-5" id="navbarSupportedContent">              
-        <ul class="navbar-nav mb-2 mb-lg-0 ">           
-          <li class="nav-item">             
-            <a href="index.html" class="navbar-brand">Inicio</a>           
-          </li>           
-          <li class="nav-item">             
-            <a href="./pages/FAQ.html" class="navbar-brand">FAQ</a>           
-          </li>           
-          <li class="nav-item">             
-            <a href="./pages/galeria.html" class="navbar-brand">Galeria</a>
-          </li>
-          <li class="nav-item">             
-            <a href="#contacto" class="navbar-brand">Contacto</a>
-          </li>
-        </ul>
+<body class="position-relative">
+  <nav class="navbar bg-body-tertiary bg-dark opacity-75 d-inline-block p-3 pf-1 fixed-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./img/LOGO-RINCON.png" alt="Bootstrap" width="auto" height="60">
+      </a>
+        <div>        
+          <a href="index.html" class="navbar-brand">Inicio</a>
+          <a href="./pages/FAQ.html" class="navbar-brand">FAQ</a>
+          <a href="./pages/galeria.html" class="navbar-brand">Galeria</a>
+          <a href="index.html#contacto" class="navbar-brand">Contacto</a>
       </div>
     </div>
   </nav>
-
   <main>
     <div class="container text-center my-5">
-      <img src="img/LOGO-RINCON-LETRAS-BLANCAS.png"  class="img-fluid float-center" alt="">
+      <img src="./img/LOGO-RINCON-LETRAS-BLANCAS.png"  class="img-fluid float-center" alt="">
       <a href="#sobre_mi" class="link-light h2 "><i class="bi bi-arrow-down"></i></a>
     </div>
     <div class="d-flex" style="height: 200px;">
       <div class="vr"></div>
     </div>
-    <div class="container-fluid text-center text-bg-primary" style="--bs-bg-opacity: .9;">
-      <div class="row justify-content-evenly align-items-center" style="min-height: 100vh;">
-        <div class="col-lg-6 col-md-5">
-          <img src="./img/portada-foto-perfil-redes-sociales-consejos.png"  class="img-fluid" alt="" id="img-perfil">
+    <div class="container-fluid text-center text-bg-primary" id="sobre_mi" style="--bs-bg-opacity: .9;">
+      <div class="row  justify-content-evenly align-items-center" style="height: 100vh;">
+        <div class="col-4">
+          <p class="text-start text-light fs-5">¡Bienvenidos a mi espacio de viajes y aventuras! Soy Romina Perez, y estoy encantado/a de tener la oportunidad de compartir mis experiencias contigo.A través de este blog, quiero transportarte a los destinos más fascinantes del mundo y brindarte una ventana a las maravillas que he tenido el privilegio de presenciar. Desde ciudades vibrantes hasta parajes naturales, cada lugar tiene su propia historia y encanto que espero poder transmitirte a través de mis palabras y fotografías.¡Bienvenidos a mi blog de viajes! ¡Espero que disfrutes del recorrido y te sientas inspirado/a para explorar el mundo por ti mismo/a!</p>
         </div>
-        <div class="col-lg-6 col-md-7">
-          <p class="text-light fs-5 p-3">¡Bienvenidos a mi espacio de viajes y aventuras! Soy Romina Perez, y estoy encantado/a de tener la oportunidad de compartir mis experiencias contigo.A través de este blog, quiero transportarte a los destinos más fascinantes del mundo y brindarte una ventana a las maravillas que he tenido el privilegio de presenciar. Desde ciudades vibrantes hasta parajes naturales, cada lugar tiene su propia historia y encanto que espero poder transmitirte a través de mis palabras y fotografías.¡Bienvenidos a mi blog de viajes! ¡Espero que disfrutes del recorrido y te sientas inspirado/a para explorar el mundo por ti mismo/a!</p>
+        <div class="col-4">
+          <img src="./img/portada-foto-perfil-redes-sociales-consejos.png"  class="img-fluid w-50" alt="" id="img-perfil">
         </div>
       </div>
     </div>
-    <div class="d-flex" style="height: 200px;">
-      <div class="vr"></div>
-    </div>
   </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <footer class="mt-2 p-5 row align-items-end justify-content-evenly" id="contacto">
+    <form action="" class="text-dark bg-light rounded p-5 col-lg-6">
+      <legend class="text-center">Contacto</legend>
+      <div class="row mt-2">
+        <label for="nombre" class="col-sm-4 col-form-label col-form-label-lg">Nombre</label>
+        <div class="col-lg-8">
+          <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Nombre">
+        </div>
+      </div>
+      <div class="row mt-2">
+        <label for="email" class="col-sm-4 col-form-label col-form-label-lg">Email</label>
+        <div class="col-lg-8">
+          <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="row mt-2">
+        <label for="mensaje" class="col-sm-4 col-lg-4 col-form-label col-form-label-lg">Mensaje</label>
+        <div class="col-lg-8">
+          <textarea type="text" class="form-control form-control-lg" id="mensaje" placeholder="Mensaje"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary mt-2">Submit</button>
+    </form>
+    <div class="col-lg-4 p-3 text-center text-light">
+      <h2>Redes Sociales</h2> 
+      <div class="">
+        <a href="" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-instagram"></i></a>
+        <a href="" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-twitter"></i></a>
+        <a href="" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-facebook"></i></a>
+        <a href="" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-linkedin"></i></a>
+        <a href="" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-youtube"></i></a>
+        <a href="" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-pinterest"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+  </script>
 </body>
 </html>

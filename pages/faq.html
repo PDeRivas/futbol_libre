@@ -11,16 +11,29 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <nav class="navbar bg-body-tertiary bg-dark opacity-75 d-inline-block p-3 pf-1 fixed-top" data-bs-theme="dark">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../img/LOGO-RINCON.png" alt="Bootstrap" width="auto" height="60">
-      </a>
-        <div>        
-          <a href="../index.html" class="navbar-brand">Inicio</a>
-          <a href="./faq.html" class="navbar-brand">FAQ</a>
-          <a href="./galeria.html" class="navbar-brand">Galeria</a>
-          <a href="../index.html#contacto" class="navbar-brand">Contacto</a>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top opacity-75 " data-bs-theme="dark">     
+    <div class="container-fluid">       
+      <a class="navbar-brand mx-5" href="../index.html">         
+        <img src="../img/LOGO-RINCON.png" alt="Bootstrap" width="auto" height="60">       
+      </a>       
+      <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">         
+        <span class="navbar-toggler-icon"></span>       
+      </button>       
+      <div class="collapse navbar-collapse justify-content-end mx-5" id="navbarSupportedContent">              
+        <ul class="navbar-nav mb-2 mb-lg-0 ">           
+          <li class="nav-item">             
+            <a href="../index.html" class="navbar-brand">Inicio</a>           
+          </li>           
+          <li class="nav-item">             
+            <a href="faq.html" class="navbar-brand">FAQ</a>           
+          </li>           
+          <li class="nav-item">             
+            <a href="galeria.html" class="navbar-brand">Galeria</a>
+          </li>
+          <li class="nav-item">             
+            <a href="../index.html#contacto" class="navbar-brand">Contacto</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -28,7 +41,7 @@
     <div class="vr"></div>
   </div>
     <section class="py-12 py-sm-24 bg-info-light">
-        <div class="container  p-3 rounded w-75 prueba">
+        <div class="container  p-3 rounded w-75 seccion-blanca">
           <div class="mb-16 text-center"><span class="fs-9 fw-semibold text-primary text-uppercase text-primary">¿TIENES ALGUNA PREGUNTA?</span>
             <h2 class="mt-8 mb-0">Preguntas Frecuentes</h2>
           </div>
@@ -99,18 +112,12 @@
                 </div>
                 <p class="mw-md mt-4 mb-0 text-secondary collapse" id="faq5">En nuestro blog de viajes, nos enfocamos en ayudarte a tener experiencias únicas y auténticas. Te proporcionaremos información sobre destinos menos conocidos pero fascinantes, recomendaciones de lugares locales auténticos para comer y actividades fuera de lo común. Además, te alentamos a interactuar con los lugareños, aprender sobre su cultura y participar en eventos o festivales locales para sumergirte verdaderamente en la experiencia de viaje.</p>
               </button>
-              <form action="" class="text-dark bg-light rounded p-3 col-lg-12" id="suggestions">
-                <legend class="text-center">¿hay algún lugar que recomiendas? envianos tus sugerencias.</legend>
+              <h3 class="text-center mt-5">¿Y tú que lugar nos recomiendas? <br> Envianos tus sugerencias.</h3>
+              <form action="" class="text-dark rounded border border-primary p-3 col-lg-12" id="suggestions">
                 <div class="row mt-2">
                   <label for="nombre" class="col-sm-4 col-form-label col-form-label-lg">Nombre</label>
                   <div class="col-lg-8">
                     <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Nombre">
-                  </div>
-                </div>
-                <div class="row mt-2">
-                  <label for="email" class="col-sm-4 col-form-label col-form-label-lg">Email</label>
-                  <div class="col-lg-8">
-                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
                   </div>
                 </div>
                 <div class="row mt-2">
